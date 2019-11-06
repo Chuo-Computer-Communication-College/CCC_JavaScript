@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>
+      複利計算
+    </title>
+  </head>
+  <body>
+    複利計算グラフ
+    <br>
+    <br>
+    <script language="JavaScript">
+<!--
+// alert(1000 * Math.pow((1 + 0.01), 20));
+// 元金
+principal = 1000;
+// 年利
+annual_interest_rate = 0.07;
+// 年数
+years = 20;
+
+for (i = 1; i <= years; i++)
+{
+  deposit = principal * Math.pow((1 + annual_interest_rate), i);
+
+  // 棒グラフの高さ調整
+  bar_height = deposit / 10;
+
+  document.write('<img src="pixel.gif" width="8" height="' + bar_height + '">');
+}
+// -->
+    </script>
+  </body>
+</html>
